@@ -489,7 +489,7 @@
 }
 
 .appToday {
-  margin: 10px 12px 0;
+  margin: 10px 12px 12px;
   padding: 12px;
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.8);

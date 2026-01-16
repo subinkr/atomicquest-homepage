@@ -782,49 +782,6 @@ function LandingPage({ lang, setLang }: { lang: Lang; setLang: (v: Lang) => void
                   </div>
                 </div>
 
-                <div className="appTabs">
-                  <div className="appTab appTabActive">{c.mockTabWeekly}</div>
-                  <div className="appTab">{c.mockTabCalendar}</div>
-                </div>
-
-                <div className="appWeek">
-                  <div className="appWeekHeader">
-                    <div className="appWeekNav">‹</div>
-                    <div className="appWeekRange">{c.mockWeekRange}</div>
-                    <div className="appWeekNav">›</div>
-                  </div>
-                  <div className="appWeekStrip">
-                    <div className="appDay">
-                      <div className="appDayDow">Mon</div>
-                      <div className="appDayNum">12</div>
-                    </div>
-                    <div className="appDay">
-                      <div className="appDayDow">Tue</div>
-                      <div className="appDayNum">13</div>
-                    </div>
-                    <div className="appDay">
-                      <div className="appDayDow">Wed</div>
-                      <div className="appDayNum">14</div>
-                    </div>
-                    <div className="appDay">
-                      <div className="appDayDow">Thu</div>
-                      <div className="appDayNum">15</div>
-                    </div>
-                    <div className="appDay appDayActive">
-                      <div className="appDayDow">Fri</div>
-                      <div className="appDayNum">16</div>
-                    </div>
-                    <div className="appDay">
-                      <div className="appDayDow">Sat</div>
-                      <div className="appDayNum">17</div>
-                    </div>
-                    <div className="appDay">
-                      <div className="appDayDow">Sun</div>
-                      <div className="appDayNum">18</div>
-                    </div>
-                  </div>
-                </div>
-
                 <div className="appToday">
                   <div className="appTodayHeader">
                     <div className="appTodayLeft">1/16</div>
@@ -849,48 +806,6 @@ function LandingPage({ lang, setLang }: { lang: Lang; setLang: (v: Lang) => void
                         <span className="appMiniBtn" />
                         <span className="appMiniBtn" />
                       </div>
-                    </div>
-                  </div>
-                  <div className="appCollapse">
-                    <span>{c.mockCollapseAll}</span>
-                    <span>{c.mockExpandAll}</span>
-                  </div>
-                </div>
-
-                <div className="appAbilities">
-                  <div className="appAbility">
-                    <div className="appAbilityHeader">
-                      <div className="appAbilityTitle">{c.mockAbility1}</div>
-                      <div className="appAbilityActions">
-                        <span className="appAbilityIcon" />
-                        <span className="appAbilityAdd">{c.mockAddActivity}</span>
-                      </div>
-                    </div>
-                    <div className="appActivity">
-                      <div className="appActivityIcon" />
-                      <div className="appActivityBody">
-                        <div className="appActivityTitle">{c.mockItem1}</div>
-                        <div className="appActivityMeta">{c.mockScheduleExample}</div>
-                      </div>
-                      <div className="appToggle appToggleOn" />
-                    </div>
-                  </div>
-
-                  <div className="appAbility">
-                    <div className="appAbilityHeader">
-                      <div className="appAbilityTitle">{c.mockAbility2}</div>
-                      <div className="appAbilityActions">
-                        <span className="appAbilityIcon" />
-                        <span className="appAbilityAdd">{c.mockAddActivity}</span>
-                      </div>
-                    </div>
-                    <div className="appActivity">
-                      <div className="appActivityIcon" />
-                      <div className="appActivityBody">
-                        <div className="appActivityTitle">{c.mockItem2}</div>
-                        <div className="appActivityMeta">{c.mockScheduleExample}</div>
-                      </div>
-                      <div className="appToggle" />
                     </div>
                   </div>
                 </div>
