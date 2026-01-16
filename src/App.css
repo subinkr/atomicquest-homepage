@@ -75,6 +75,40 @@
 .headerCta {
   display: flex;
   align-items: center;
+  gap: 10px;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.langLabel {
+  display: inline-flex;
+  align-items: center;
+}
+
+.langSelect {
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  color: rgba(15, 23, 42, 0.9);
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.langSelect:focus {
+  outline: 3px solid rgba(99, 102, 241, 0.25);
+  outline-offset: 2px;
 }
 
 .btn {
@@ -173,6 +207,36 @@
   max-width: 52ch;
 }
 
+.heroPoints {
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+  max-width: 54ch;
+}
+
+.heroPoint {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: 13px;
+  font-weight: 800;
+  color: rgba(15, 23, 42, 0.7);
+}
+
+.heroPoint::before {
+  content: '';
+  width: 18px;
+  height: 18px;
+  margin-top: 1px;
+  border-radius: 6px;
+  background: rgba(34, 197, 94, 0.14);
+  border: 1px solid rgba(34, 197, 94, 0.22);
+  box-shadow: 0 10px 18px rgba(34, 197, 94, 0.08);
+  flex: none;
+}
+
 .heroActions {
   margin-top: 16px;
   display: flex;
@@ -212,6 +276,432 @@
   position: relative;
   display: flex;
   justify-content: center;
+}
+
+.appMock {
+  width: min(430px, 100%);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.12);
+  overflow: hidden;
+}
+
+.appMockTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.06);
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.appMockTitle {
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  font-size: 13px;
+  color: rgba(15, 23, 42, 0.88);
+}
+
+.appMockIcon {
+  width: 28px;
+  height: 28px;
+  border-radius: 10px;
+  background: rgba(15, 23, 42, 0.06);
+  position: relative;
+}
+
+.appMockIcon::after {
+  content: '';
+  position: absolute;
+  inset: 8px;
+  border-radius: 999px;
+  border: 2px solid rgba(99, 102, 241, 0.55);
+}
+
+.appGoalCard {
+  margin: 12px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.06);
+  padding: 12px;
+}
+
+.appGoalHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.appGoalLabel {
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  color: rgba(15, 23, 42, 0.45);
+}
+
+.appGoalTotal {
+  font-size: 11px;
+  font-weight: 800;
+  color: rgba(15, 23, 42, 0.45);
+  white-space: nowrap;
+}
+
+.appGoalText {
+  margin-top: 8px;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+  color: rgba(15, 23, 42, 0.88);
+}
+
+.appGoalProgress {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 14px;
+  background: rgba(15, 23, 42, 0.03);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.appGoalBar {
+  height: 10px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(99, 102, 241, 0.35), rgba(99, 102, 241, 0.1));
+}
+
+.appGoalStats {
+  margin-top: 8px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  font-size: 11px;
+  font-weight: 800;
+  color: rgba(15, 23, 42, 0.45);
+}
+
+.appGoalActions {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.appBtn {
+  height: 32px;
+  padding: 0 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  background: rgba(255, 255, 255, 0.75);
+  font-weight: 900;
+  font-size: 12px;
+  color: rgba(15, 23, 42, 0.72);
+}
+
+.appTabs {
+  margin: 10px 12px 0;
+  border-radius: 999px;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  background: rgba(15, 23, 42, 0.04);
+  padding: 2px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+}
+
+.appTab {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 900;
+  color: rgba(15, 23, 42, 0.55);
+  border-radius: 999px;
+}
+
+.appTabActive {
+  background: rgba(99, 102, 241, 0.14);
+  color: rgba(15, 23, 42, 0.82);
+  border: 1px solid rgba(99, 102, 241, 0.22);
+}
+
+.appWeek {
+  margin: 10px 12px 0;
+}
+
+.appWeekHeader {
+  display: grid;
+  grid-template-columns: 22px 1fr 22px;
+  align-items: center;
+  gap: 10px;
+  color: rgba(15, 23, 42, 0.6);
+  font-weight: 900;
+  font-size: 12px;
+}
+
+.appWeekNav {
+  height: 22px;
+  width: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: rgba(15, 23, 42, 0.04);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.appWeekRange {
+  text-align: center;
+}
+
+.appWeekStrip {
+  margin-top: 8px;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.appDay {
+  padding: 8px 6px;
+  border-radius: 14px;
+  background: rgba(15, 23, 42, 0.03);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  text-align: center;
+}
+
+.appDayActive {
+  background: rgba(99, 102, 241, 0.12);
+  border-color: rgba(99, 102, 241, 0.22);
+}
+
+.appDayDow {
+  font-size: 10px;
+  font-weight: 900;
+  color: rgba(15, 23, 42, 0.55);
+}
+
+.appDayNum {
+  margin-top: 2px;
+  font-size: 12px;
+  font-weight: 900;
+  color: rgba(15, 23, 42, 0.85);
+}
+
+.appToday {
+  margin: 10px 12px 0;
+  padding: 12px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.appTodayHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.appTodayLeft {
+  font-weight: 900;
+  color: rgba(15, 23, 42, 0.8);
+  font-size: 12px;
+}
+
+.appTodayRight {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.appTodayMeta {
+  font-size: 11px;
+  font-weight: 900;
+  color: rgba(15, 23, 42, 0.5);
+  white-space: nowrap;
+}
+
+.appTodayEdit {
+  font-size: 11px;
+  font-weight: 900;
+  color: rgba(99, 102, 241, 0.85);
+}
+
+.appChecklist {
+  margin-top: 10px;
+  display: grid;
+  gap: 8px;
+}
+
+.appCheckRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 14px;
+  background: rgba(15, 23, 42, 0.03);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.appCheckText {
+  font-size: 12px;
+  font-weight: 900;
+  color: rgba(15, 23, 42, 0.8);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.appCheckActions {
+  display: inline-flex;
+  gap: 6px;
+}
+
+.appMiniBtn {
+  width: 26px;
+  height: 22px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(15, 23, 42, 0.12);
+}
+
+.appMiniBtnActive {
+  background: rgba(99, 102, 241, 0.16);
+  border-color: rgba(99, 102, 241, 0.25);
+}
+
+.appCollapse {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  font-size: 11px;
+  font-weight: 900;
+  color: rgba(99, 102, 241, 0.75);
+}
+
+.appAbilities {
+  margin: 10px 12px 0;
+  padding-bottom: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+.appAbility {
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  padding: 12px;
+}
+
+.appAbilityHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.appAbilityTitle {
+  font-size: 14px;
+  font-weight: 900;
+  color: rgba(15, 23, 42, 0.84);
+}
+
+.appAbilityActions {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.appAbilityIcon {
+  width: 22px;
+  height: 22px;
+  border-radius: 8px;
+  background: rgba(15, 23, 42, 0.05);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.appAbilityAdd {
+  font-size: 11px;
+  font-weight: 900;
+  color: rgba(99, 102, 241, 0.85);
+  white-space: nowrap;
+}
+
+.appActivity {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 24px 1fr auto;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+  border-radius: 16px;
+  background: rgba(15, 23, 42, 0.03);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.appActivityIcon {
+  width: 22px;
+  height: 22px;
+  border-radius: 8px;
+  background: rgba(99, 102, 241, 0.12);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.appActivityTitle {
+  font-size: 12px;
+  font-weight: 900;
+  color: rgba(15, 23, 42, 0.82);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.appActivityMeta {
+  margin-top: 4px;
+  font-size: 10px;
+  font-weight: 800;
+  color: rgba(15, 23, 42, 0.55);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.appToggle {
+  width: 38px;
+  height: 22px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.12);
+  position: relative;
+}
+
+.appToggle::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.18);
+}
+
+.appToggleOn {
+  background: rgba(99, 102, 241, 0.42);
+}
+
+.appToggleOn::after {
+  left: 19px;
+}
+
+.appMockFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px 12px;
 }
 
 .mockCard {
